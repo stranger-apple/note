@@ -62,3 +62,27 @@ rm命令：$ rm 文件名  然后$ git rm 文件名 删掉，并且git commit
 内嵌代码 : ``  
 画水平线 (HR)  
 方框:- [ ] -  
+#transform transition  
+1. transform-origin 改变被转换元素的位置。(x-axis y-axis z-axis;)
+2. transition-property ：规定设置过渡效果的css属性名称:none all.  
+3. transition-duration：time.完成过渡效果的时间。
+4. transition-timing-funcyion：指定过渡函数，规定速度效果的速度曲线。  
+ease速度由快到慢，逐渐变慢  
+linear 恒速  
+ease-in呈加速状态
+ease-out呈减速状态
+ease-in-out先加速再减速
+5. transform: rotate(ndeg);顺时针旋转n°
+6. scale对文字或图像缩放处理 
+transform: scale(0.5);水平方向、垂直方向缩小一半  
+transform: scale(0.5, 2)：水平方向缩小一半、垂直方向放大一倍
+7. skew文字或图像倾斜处理
+transform: skew(30deg, 30deg);水平方向、垂直方向倾斜30°
+transform: skew(30deg)；只在水平方向倾斜30°
+8. translate文字或图像的移动处理，在参数中分布指定水平方向上的移动距离与垂直方向上的移动距离。  
+transform: translate(50px, 50px);水平方向、垂直方向移动50px
+transform: translate(50px);只在水平方向移动50px  
+（Internet Explorer 10、Firefox、Opera 支持 transform-origin 属性。  
+Internet Explorer 9 支持替代的 -ms-transform-origin 属性（仅适用于 2D 转换）。  
+Safari 和 Chrome 支持替代的 -webkit-transform-origin 属性（3D 和 2D 转换）。  
+Opera 只支持 2D 转换。)  
