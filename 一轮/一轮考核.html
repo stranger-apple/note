@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>一轮考核</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style type="text/css">
+  .box1{height:39px;width:1366px;background-color: #3d3d3d;}
+.box11{height:27px;width: 26px;float: left;margin: 6px 0px 6px 142px;background-image: url(abc.psd_0000s_0000s_0002s_0000_PHONE.png);}
+.box12{height:14px;width:134px;float:left;margin:9px 0px 12.5px 11px;vertical-align: middle;font-size:16px;font-weight:bold;color:#ffff;}
+.box13{height:20px;width:27px;float:left;margin:9.5px 0px 5.5px 25.8px;background-image: url(abc.psd_0000s_0000s_0001s_0000_E-mail.png);}
+.box14{height:18px;width:203px;float:left;margin:9px 0px 10.6px 10.7px;font-size:16px;font-weight:bold;color:#ffff;}
+.box15{height:18px;width:142px;float:left;margin:9px 0px 10.5px 147px;font-weight: bold;font-size: 17px;color:#ffff;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.box16{height:27px;width:23px;float:left;margin: 6px 0px 6px 238.3px;background-image: url(abc.psd_0000s_0000s_0000s_0000_MAN-USER.png);}
+.box17{height:18px;width:95px;float:left;margin:7px 0px 0px 10.5px;vertical-align: middle;font-size: large;}
+.box17 a{color:#ffff; text-decoration: none;font-weight: bold;margin-right: 10px;}
+/*第二块*/
+.box2{position: relative;width:1366px;height:122px;}
+.box21{position:absolute;margin:18px 0px 18px 143.4px;}
+.box22{margin: 27px 0px 27px 236.3px;position: absolute;}
+.box23 ul{ width: fit-content; position: absolute; list-style:none;left:667px;}
+.box23 li{ width: fit-content;font-weight:bold;font-size:18px;
+ font-family:"Microsoft YaHei" ; margin: 30px 10px;display: inline-block;}
+.box23 a{ text-decoration: none;color: black;}
+.box23 a:hover li{color:#54b9b6}
+
+/*第三块*/
+.box3{position:relative;height:376px;width: 1366px;background-image: url(abc.psd_0000s_0003s_0000_20171225202307425.png)}
+.box31 img{position: absolute;margin: 221px 0px 13.6px 343px;}
+.box31 input{position: absolute;margin:221px 0px 13.6px 460px;height: 44px;width:562.5px;}
+.box32 img{position: absolute;margin: 280px 0px 0px 343px; }
+.box32 input{position: absolute;margin: 280px 0px 0px 460px;height: 44px;width: 562.5px;}
+.box33 ul{ width: fit-content; position: absolute; list-style:none;left:303px;top:315px;}
+.box33 li{ width: fit-content;font-size:small;font-family:"Microsoft YaHei" ; margin: 0px;display: inline-block;}
+.box33 li{ text-decoration: none;color:#ffff;}
+.box33 a:hover li{color:#54b9b6}
+/*二维码*/
+.code{position: absolute;margin:276.5px 0px 0px 1279px;background: #6d6c6c;width:87px;height:97px;color: #ffff;}
+.code img{margin:15px 16px 0PX 16PX;}
+.code::after{
+content: url(二维码.png);
+position: absolute;
+left:-220px;
+top: -53px;
+z-index: 99;
+transform: scale(0);
+opacity: 0;
+transition: all .4s ease-in-out;
+}
+.code:hover::after{
+transform:scale(1);
+opacity: 1;
+}
+/*在线客服*/
+.phone{position: absolute;left:1287px;top:545px;}
+/*回到顶部*/
+.stick{position: absolute;left:1287px;top:645px;}
+/*第四块*/
+
+.xuan{position:absolute ;left:142px;}
+.xuan ul{list-style: none;position: absolute;top:-16px;left:-33px;}
+.xuan ul li{text-align: center;border:solid #c6c6c6 2px; }
+.xuan ul li input{width: 154px;height:48px;color:#ffff;background:#3d3d3d;}
+.elect{position:absolute;margin-left:295px;width:927px;height:296px;}
+.elect div{position:absolute;width:927px;height:296px;border:#c6c6c6 2px solid;display:none;}
+.elect div.show{display:block;}
+.xuan ul input.bgc{background-color: #ffff;color:black;}
+.news1{position:absolute;left:41px;top:10px;width:392px;height:116px;}
+.news11{position:absolute;}
+.news12{position:absolute;left:174px;width:205.5px;display:inline-block;font-family:"Microsoft YaHei";font-size:x-small; }
+.news13{position: absolute;top:100px;left:330px;font-size: xx-small;color:#54b9b6;}
+.news2{position: absolute;left:485px;top:10px;width:410px;height:116px;}
+.news21{position:absolute;}
+.news22{position: absolute;left:176px;width:225px;display:inline-block;font-family:"Microsoft YaHei";font-size: x-small; }
+.news23{position:absolute;top:100px;left:350px;font-size: xx-small;color:#54b9b6;}
+.news3{position: absolute;left:41px;top:155px;width:392px;height:116px;}
+.news31{position:absolute;}
+.news32{position: absolute;left:174px;width:205.5px;display:inline-block;font-family:"Microsoft YaHei";font-size: x-small; }
+.news33{position:absolute;top:100px;left:330px;font-size: xx-small;color:#54b9b6;}
+.news4{position: absolute;left:485px;top:155px;width:410px;height:116px;}
+.news41{position:absolute;}
+.news42{position: absolute;left:176px;width:225px;display:inline-block;font-family:"Microsoft YaHei";font-size: x-small; }
+.news43{position:absolute;top:100px;left:350px;font-size: xx-small;color:#54b9b6;}
+
+/*第五块*/
+.foot{height:287px;width:1088px;position:absolute;left:142px;margin-top:300px;}
+.line{width:1086px;margin-top:47px;border:1px solid black;}
+.foot1{position:absolute;top:47px;width:544px;height:175px;}
+.foot11{position:absolute;top:25px;}
+.foot12{position: absolute;top:19px;left:51px;display:inline-block;width:168px;height:43px;}
+.foot13{position: absolute;top:25px;left:295px;}
+.foot14{position: absolute;top:19px;left:346px;display: inline-block;width:168px;height: 43px;}
+.foot15{position: absolute;top:109px;}
+.foot16{position:absolute;top:105px;left:51px;display:inline-block;width:168px;height:43px;}
+.foot17{position: absolute;top:109px;left:295px;}
+.foot18{position:absolute;top:105px;left:346px;display:inline-block;width:168px;height:43px;}
+.foot2{position:absolute;top:47px;left:537px;width:554px;height:175px;background: #3d3d3d;color:#e7e7e7}
+.foot21{position:absolute;top:25px;left:39px;}
+.foot22{position:absolute;top:19px;left:90px;display: inline-block;width: 188px;height:43px;}
+.foot23{position: absolute;top:25px;left:334px;}
+.foot24{position:absolute;top:19px;left:385px;display:inline-block;width:168px;height:43px;}
+.foot25{position:absolute;top:109px;left:39px;}
+.foot26{position: absolute;top:105px;left:90px;display: inline-block;width: 178px;height: 43px;}
+.foot27{position: absolute;top:109px;left:334px;}
+.foot28{position:absolute;top:105px;left:385px;display: inline-block;width:168px;height:43px;}
+</style>
+</head>
+<body>
+    <div class="box1">
+    <div class="box11"></div>
+    <div class="box12">020-310-41987</div>
+    <div class="box13"></div>
+    <div class="box14">chn_mahone@163.com</div>
+    <div class="box15">欢迎来到热泉港！</div>
+    <div class="box16"></div>
+    <div class="box17"><a href="#">登录</a>
+    <a href="#">注册</a></div>
+  </div>
+  <!--第二块-->
+  <div class="box2">
+    <div class="box21"><img src="abc.psd_0000s_0002s_0001_logo.png"></div>
+    <div class="box22"><img src="abc.psd_0000s_0002s_0000_热泉港---生命科学仪器试剂耗材经销商.png"></div>
+    <div class="box23">
+        <ul>
+            <a href="#"><li style="color:#54b9b6">Yechine首页</li></a>
+            <a href="#"><li>公司简介</li></a>
+            <a href="#"><li>人才招聘</li></a>
+            <a href="#"><li>公司通知</li></a>
+            <a href="#"><li>联系我们</li></a>
+        </ul>
+    </div>
+</div>
+<!--第三块-->
+ <div class="box3">
+    <div class="box31">
+      <form method="POST" action="save.php">
+      <img src="abc1.png">
+      <input type="text" name="search" placeholder="&nbsp &nbsp请输入您要搜索的产品分类、型号">
+      </form>
+    </div>  
+    <div class="box32">
+      <form method="POST" action="save.php">
+        <img src="abc2.png">
+        <input type="text" name="namesearch" placeholder="&nbsp &nbsp请输入您要搜索的产品名称">
+      </form>
+    </div>
+    <div class="box33">
+     <ul>
+       <li>HOT关键词：</li>
+        <a href="#"><li>灭菌器&nbsp;|</li></a>
+        <a href="#"><li>离心管&nbsp;|</li></a>
+        <a href="#"><li>手套&nbsp;|</li></a>
+        <a href="#"><li>pH计&nbsp;|</li></a>
+        <a href="#"><li>活性口罩&nbsp;|</li></a>
+        <a href="#"><li>滤纸&nbsp;|</li></a>
+        <a href="#"><li>胶头&nbsp;|</li></a>
+        <a href="#"><li>三脚架</li></a>
+      </ul>
+    </div>
+    <!--二维码-->
+    <div class="code">
+        <img src="abc.psd_0000s_0001s_0002s_0001_二维码图标.png">
+        <div style="text-align: center;font-size: small; color: #ffff">二维码</div>
+      </div>
+    </div>
+    <div class="phone"><img src="在线客服.png"></div>
+    <a href="#"><div class="stick"><img src="回到顶部.png"></div></a>
+    <!--第四块--> 
+<div id="box4">
+    <p style="color:#1ba19d;text-align:center;margin-top:34px;margin-bottom:3px;font-weight:bold;font-size: 20px;">/更多资讯/</p>
+   <span class="xuan">
+     <ul>
+       <li ><input type="button" class="bgc" value="尖端技术"></li>
+       <li><input type="button" value="网络研讨会"></li>
+        <li><input type="button" value="食药资讯"></li>
+        <li><input type="button" value="最新应用"></li>
+     </ul>
+    </span>
+<h class="elect">
+  <div class="show">
+    <p class="news1">
+      <scanf  class="news11"><img src="abc.psd_0000s_0004s_0003s_0006_XTrac.png"></scanf>
+      <scanf class="news12">XTrc智能液体萃取液平台可用于固体、液体中目标物质中的自动提取，过滤，过滤实验，可用于农业、烟草、食品、制药等行业。</scanf>
+      <a href="#"><scanf class="news13">了解更多</scanf></a>
+    </p>
+    <p class="news2">
+      <scanf class="news21"><img src="abc.psd_0000s_0004s_0003s_0002_austin-neill.png"></scanf>
+      <scanf class="news22">GraviTrac智能称量平台可用于大批量的称量、恒重称量，可用于制药、农业、烟草、化工、食品、制药等行业。</scanf>
+      <a href="#"><scanf class="news23">了解更多</scanf></a>
+      </p>
+    <p class="news3">
+      <scanf class="news31"><img src="abc.psd_0000s_0004s_0003s_0004_MultiTasker.png"></scanf>
+      <scanf class="news32">MultiTsker智能多功能样品制备平台用于前处理样品的制备，可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。</scanf>
+      <a href="#"><scanf class="news33">了解更多</scanf></a>
+      </p>
+    <p class="news4">
+       <scanf class="news41"><img src="abc.psd_0000s_0004s_0003s_0000_jametlene-reskp.png"></scanf>
+       <scanf class="news42">GraviTracPLUS智能称重分装平台用于多种固体样品的自动称量及分装，混合可用于化学、食品、制药等行业。</scanf>
+       <a href="#"><scanf href="#" class="news43">了解更多</scanf></a>
+       </p> 
+  </div>
+ 
+  <div class="elect2">内容一</div>
+  <div class="elect3">内容二</div>
+  <div class="elect4">内容三</div>
+</h>  
+</div>
+
+
+<!--第五块-->
+<div class="foot">
+  <div class="line"></div>
+  <div class="foot1">
+    <div class="foot11"><img src="abc.psd_0000s_0005s_0007s_0002_CART.png"></div>
+    <div class="foot12"><scan style="font-weight:bold;font-size:x-large;color:#484848">大量现货</scan><br/><scan style="font-size: small;color:#5f5f5f">现货产品4点前下单当天发货</scan></div>
+    <div class="foot13"><img src="abc.psd_0000s_0005s_0004s_0002_GLOBE-1.png"></div>
+    <div class="foot14"><scan style="font-weight:bold;font-size:x-large;color:#484848">满500免运费</scan><br/><scan style="font-size: small;color:#5f5f5f">部分区域订单满500免运费</scan></div>
+    <div class="foot15"><img src="abc.psd_0000s_0005s_0006s_0002_CLIPBOARD.png"></div>
+    <div class="foot16"><scan style="font-weight:bold;font-size:x-large;color:#484848">增值税专用发票</scan><br/><scan style="font-size: small;color:#5f5f5f">可提供增值锐专用发票</scan></div>
+    <div class="foot17"><img src="abc.psd_0000s_0005s_0005s_0002_CLOCK.png"></div>
+    <div class="foot18"><scan style="font-weight:bold;font-size:x-large;color:#484848">快捷配送</scan><br/><scan style="font-size: small;color:#5f5f5f">一件即发，享受快捷服务</scan></div>
+  </div>
+  <div class="foot2">
+    <div class="foot21"><img src="abc.psd_0000s_0005s_0003s_0000_CREDIT-CARD.png"></div>
+    <div class="foot22"><scan style="font-weight:bold;font-size:x-large;color:#e7e7e7">价格低</scan><br/><scan style="font-size: small;">力求最合适的产品配最优的价格</scan></div>
+    <div class="foot23"><img src="abc.psd_0000s_0005s_0001s_0000_CRONOMETER.png"></div>
+    <div class="foot24"><scan style="font-weight:bold;font-size:x-large;color:#e7e7e7">货期短</scan><br/><scan style="font-size: small;">专人负责，专业跟进，提高效率</scan></div>
+    <div class="foot25"><img src="abc.psd_0000s_0005s_0002s_0000_LAB.png"></div>
+    <div class="foot26"><scan style="font-weight:bold;font-size:x-large;color:#e7e7e7">品种多</scan><br/><scan style="font-size: small;">商品种类多涵盖多个应用领域</scan></div>
+    <div class="foot27"><img src="abc.psd_0000s_0005s_0000s_0000_GEAR.png"></div>
+    <div class="foot28"><scan style="font-weight:bold;font-size:x-large;color:#e7e7e7">包退换</scan><br/><scan style="font-size: small;">有质量或者功能问题包退换</scan></div>
+  </div>
+</div>
+<script>
+{
+  var inputs=document.getElementById('box4').getElementsByTagName('input');
+  var divs=document.getElementById('box4').getElementsByTagName('div');
+  for(i=0;i<inputs.length;i++){
+    inputs[i].index=i;
+    inputs[i].onclick=function(){
+      for(i=0;i<inputs.length;i++){
+        inputs[i].className='';
+        divs[i].style.display='none';}
+        this.className='bgc'
+        divs[this.index].style.display='block';
+      }
+    }
+  }
+  </script>
+
+
+</body>
+
+</html>
